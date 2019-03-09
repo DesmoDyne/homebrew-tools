@@ -21,8 +21,8 @@
 class DdBashLib < Formula
   desc     "DesmoDyne BashLib"
   homepage "https://github.com/desmodyne/bashlib"
-  url      "https://github.com/desmodyne/bashlib/archive/0.0.2.tar.gz"
-  sha256   "6a2cc408709ac90d7ec62cd87e61632dc988634a2025ca6e7f6dcd4ad6717620"
+  url      "https://github.com/desmodyne/bashlib/archive/0.0.3.tar.gz"
+  sha256   "e0bd3395d89ecfeab5194461dfb737224fc3b859ac17b54ab35737dfb58e9918"
 
   # required to update default bash 3 to version 4 (or 5)
   depends_on "bash"
