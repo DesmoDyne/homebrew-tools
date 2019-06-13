@@ -13,8 +13,8 @@
 class DdDockerTools < Formula
   desc     "DesmoDyne DockerTools"
   homepage "https://github.com/desmodyne/DockerTools"
-  url      "https://github.com/desmodyne/DockerTools/archive/0.0.2.tar.gz"
-  sha256   "367e49c2cec4eb1e7f07004590bc6b24109ccc685084ddeafe120ed4ade09d00"
+  url      "https://github.com/desmodyne/DockerTools/archive/0.0.3.tar.gz"
+  sha256   "1acdd14768b45c7503c2c074db1228344e372d988e2b15d78e47cf1dee3e3abb"
 
   depends_on "awscli"
   depends_on "coreutils"
