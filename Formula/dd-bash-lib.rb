@@ -21,11 +21,13 @@
 class DdBashLib < Formula
   desc     "DesmoDyne BashLib"
   homepage "https://github.com/desmodyne/bashlib"
-  url      "https://github.com/desmodyne/bashlib/archive/0.0.5.tar.gz"
-  sha256   "395408a3dc9c3db2b5c200b8722a13a60898c861633b99e6e250186adffd1370"
+  url      "https://github.com/desmodyne/bashlib/archive/0.0.6.tar.gz"
+  sha256   "81fb90d5718a3e42d9316726f2500e087922b91544068a8520a197325b872118"
 
   # required to update default bash 3 to version 4 (or 5)
   depends_on "bash"
+  depends_on "jq"
+  depends_on "yq"
 
   # https://github.com/Homebrew/brew/blob/master/ ...
   #  ... docs/Formula-Cookbook.md#just-moving-some-files
