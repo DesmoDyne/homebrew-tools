@@ -1,4 +1,4 @@
-# dd-bash-lib.rb
+# dd-bash-lib.rb, rendered from dd-bash-lib.rb.j2
 #
 # DesmoDyne BashLib brew formula
 #
@@ -21,8 +21,8 @@
 class DdBashLib < Formula
   desc     "DesmoDyne BashLib"
   homepage "https://github.com/desmodyne/bashlib"
-  url      "https://github.com/desmodyne/bashlib/archive/0.0.4.tar.gz"
-  sha256   "13936368a0e019228febaa7c22e1306a388dccb4e4aac30f6f26f48148b01af2"
+  url      "https://github.com/desmodyne/bashlib/archive/0.0.5.tar.gz"
+  sha256   "395408a3dc9c3db2b5c200b8722a13a60898c861633b99e6e250186adffd1370"
 
   # required to update default bash 3 to version 4 (or 5)
   depends_on "bash"
