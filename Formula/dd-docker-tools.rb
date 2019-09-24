@@ -1,4 +1,4 @@
-# dd-docker-tools.rb
+# dd-docker-tools.rb, rendered from dd-docker-tools.rb.j2
 #
 # DesmoDyne DockerTools brew formula
 #
@@ -13,18 +13,16 @@
 class DdDockerTools < Formula
   desc     "DesmoDyne DockerTools"
   homepage "https://github.com/desmodyne/DockerTools"
-  url      "https://github.com/desmodyne/DockerTools/archive/0.0.3.tar.gz"
-  sha256   "1acdd14768b45c7503c2c074db1228344e372d988e2b15d78e47cf1dee3e3abb"
+  url      "https://github.com/desmodyne/DockerTools/archive/0.0.4.tar.gz"
+  sha256   "730485625fec23a66f36f0bf57449979898d57af5362ef56988a0eaafd8b0d6c"
 
   depends_on "awscli"
   depends_on "coreutils"
+  depends_on "desmodyne/tools/dd-bash-lib"
   depends_on "docker"
   depends_on "docker-compose"
   depends_on "jq"
   depends_on "yq"
-
-  # requires tap added using `brew tap desmodyne/tools`
-  depends_on "dd-bash-lib"
 
   def install
     # https://github.com/Homebrew/brew/blob/master/ ...
