@@ -13,20 +13,29 @@
 class DdDockerTools < Formula
   desc     "DesmoDyne DockerTools"
   homepage "https://github.com/desmodyne/DockerTools"
-  url      "https://github.com/desmodyne/DockerTools/archive/0.0.4.tar.gz"
-  sha256   "730485625fec23a66f36f0bf57449979898d57af5362ef56988a0eaafd8b0d6c"
+  url      "https://github.com/desmodyne/DockerTools/archive/0.0.5.tar.gz"
+  sha256   "e5c5647007eefba5307b1cbda6c4cfb8819a39917120ede780874dad025abde2"
 
+  # NOTE: only req'd for CI/CD
+  # depends_on "jinja2-cli"
+
+  # req'd for aws
   depends_on "awscli"
+  # required to update default bash 3 to version 4 (or 5)
+  # TODO: introduce convention if this should be listed here:
+  # dd-bash-lib lists latest bash as dependency, but scripts
+  # of this project also make use of bash 4+ features, e.g. arrays
+  depends_on "bash"
+  # req'd for realpath and others; sha256sum for CI/CD
   depends_on "coreutils"
   depends_on "desmodyne/tools/dd-bash-lib"
   depends_on "docker"
   depends_on "docker-compose"
   depends_on "jq"
+  depends_on "pipenv"
   depends_on "yq"
 
   def install
-    # https://github.com/Homebrew/brew/blob/master/ ...
-    #  ... docs/Formula-Cookbook.md#just-moving-some-files
     bin.install Dir["code/bin/*"]
   end
 end
