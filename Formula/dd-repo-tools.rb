@@ -13,8 +13,8 @@
 class DdRepoTools < Formula
   desc     "DesmoDyne RepoTools"
   homepage "https://github.com/desmodyne/RepoTools"
-  url      "https://github.com/desmodyne/RepoTools/archive/0.0.1.tar.gz"
-  sha256   "d7ab48edd132e4c039380c9583a0149165264a122034b8ed3e72a64b34b2cbd4"
+  url      "https://github.com/desmodyne/RepoTools/archive/0.0.2.tar.gz"
+  sha256   "7be781748b86186e0bacdd85b02b0f36af2e4cacb5fbc3a492954c9b3730c4b2"
 
   # NOTE: only req'd for CI/CD
   # depends_on "jinja2-cli"
@@ -26,6 +26,5 @@ class DdRepoTools < Formula
 
   def install
     bin.install      Dir["code/bin/*"]
-    pkgshare.install Dir["code/tmpl/*"]
   end
 end
