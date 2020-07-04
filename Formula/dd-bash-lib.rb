@@ -26,8 +26,8 @@
 class DdBashLib < Formula
   desc     "DesmoDyne BashLib"
   homepage "https://github.com/desmodyne/BashLib"
-  url      "https://github.com/desmodyne/BashLib/archive/0.0.8.tar.gz"
-  sha256   "b80ae9380af23abb95d532794e47928c0c0fb2b4f66fe4fc6eeafd7cdbf1ab7a"
+  url      "https://github.com/desmodyne/BashLib/archive/0.0.9.tar.gz"
+  sha256   "3c4eeaa0168ff150aac92388ca401a31e6e4504028ef5808dd6f99d933c1b504"
 
   # TODO: introduce convention if to list dependencies that macOS also provides:
   # curl, git, etc. might have to be installed if latest version is required
@@ -61,6 +61,7 @@ class DdBashLib < Formula
   depends_on "findutils"
   # req'd for gsed
   depends_on "gnu-sed"
+  depends_on "jo"
   depends_on "jq"
   depends_on "yq"
 
