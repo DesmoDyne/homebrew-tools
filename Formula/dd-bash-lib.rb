@@ -26,8 +26,8 @@
 class DdBashLib < Formula
   desc     "DesmoDyne BashLib"
   homepage "https://github.com/desmodyne/BashLib"
-  url      "https://github.com/desmodyne/BashLib/archive/0.0.9.tar.gz"
-  sha256   "3c4eeaa0168ff150aac92388ca401a31e6e4504028ef5808dd6f99d933c1b504"
+  url      "https://github.com/desmodyne/BashLib/archive/0.0.10.tar.gz"
+  sha256   "240a18be37699fbec82b3fed3b97cdb061e06533ee06c208e0100810255eeefa"
 
   # TODO: introduce convention if to list dependencies that macOS also provides:
   # curl, git, etc. might have to be installed if latest version is required
