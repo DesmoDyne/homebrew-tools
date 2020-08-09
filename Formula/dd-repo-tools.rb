@@ -19,8 +19,8 @@
 class DdRepoTools < Formula
   desc     "DesmoDyne RepoTools"
   homepage "https://github.com/desmodyne/RepoTools"
-  url      "https://github.com/desmodyne/RepoTools/archive/0.0.3.tar.gz"
-  sha256   "f15cbb0e2c848105c438c9c609a282fe0b14da3cb32875fa92d4908023897da4"
+  url      "https://github.com/desmodyne/RepoTools/archive/0.0.4.tar.gz"
+  sha256   "3af360db0737ca9df867a0855cbecc09612e0e4266b17d7548b42ac3ae177c75"
 
   # req'd for realpath and others
   depends_on "coreutils"
