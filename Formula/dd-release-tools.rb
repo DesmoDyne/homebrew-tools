@@ -14,7 +14,7 @@ class DdReleaseTools < Formula
   desc     "DesmoDyne ReleaseTools"
   homepage "https://github.com/desmodyne/ReleaseTools"
   url      "https://github.com/desmodyne/ReleaseTools/archive/0.0.2.tar.gz"
-  sha256   "53df6d44a94068fc6a68cd9e098e5eb0c891d2441d0b81717b521d5e3e3902cb"
+  sha256   "da7d0f751a14a536815d16b218a225899766848ed46a2047b4a62e94c84f7049"
 
   # req'd for realpath and others
   depends_on "coreutils"
