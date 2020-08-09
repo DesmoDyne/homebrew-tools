@@ -13,8 +13,8 @@
 class DdDockerTools < Formula
   desc     "DesmoDyne DockerTools"
   homepage "https://github.com/desmodyne/DockerTools"
-  url      "https://github.com/desmodyne/DockerTools/archive/0.0.5.tar.gz"
-  sha256   "e5c5647007eefba5307b1cbda6c4cfb8819a39917120ede780874dad025abde2"
+  url      "https://github.com/desmodyne/DockerTools/archive/0.0.6.tar.gz"
+  sha256   "fb08507fefdc3751a5bc9246c0e1acdd3a40ba438cf32cb0b48afb58331db600"
 
   # NOTE: only req'd for CI/CD
   # depends_on "jinja2-cli"
@@ -36,6 +36,7 @@ class DdDockerTools < Formula
   depends_on "yq"
 
   def install
-    bin.install Dir["code/bin/*"]
+    bin.install      Dir["code/bin/*"]
+    pkgshare.install Dir["code/tmpl/*"]
   end
 end
