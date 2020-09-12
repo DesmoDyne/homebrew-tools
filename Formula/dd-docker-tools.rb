@@ -15,8 +15,8 @@ class DdDockerTools < Formula
 
   desc     "DesmoDyne DockerTools"
   homepage "https://github.com/desmodyne/DockerTools"
-  url      "https://github.com/desmodyne/DockerTools/archive/0.0.6.tar.gz"
-  sha256   "7ef43a62a508891793342f907b2274b1f9763ed9ecd8b894d9ab213d27d35fee"
+  url      "https://github.com/desmodyne/DockerTools/archive/0.0.7.tar.gz"
+  sha256   "2bf1af398f7599362c41a3503cf60e032d82ab49a43453a52a51a4b02218f083"
 
   # req'd for realpath and others
   depends_on "coreutils"
