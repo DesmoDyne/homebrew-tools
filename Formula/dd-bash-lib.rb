@@ -26,8 +26,8 @@
 class DdBashLib < Formula
   desc     "DesmoDyne BashLib"
   homepage "https://github.com/desmodyne/BashLib"
-  url      "https://github.com/desmodyne/BashLib/archive/0.0.11.tar.gz"
-  sha256   "8159eb06bd148bd711e6ebcdde1e6d4bf399881e3888a1ac610c360555fffaab"
+  url      "https://github.com/desmodyne/BashLib/archive/0.0.12.tar.gz"
+  sha256   "c0bc353fbdb9345fb52fdcb4d4f4526697f92f025255153a054bfaeda90d27bd"
 
   # TODO: introduce convention if to list dependencies that macOS also provides:
   # curl, git, etc. might have to be installed if latest version is required
@@ -44,11 +44,11 @@ class DdBashLib < Formula
   #     would have to made available to production; however this would be
   #     be done for testing alone and not to actually use the library
   # therefore, neither brew build nor test concepts apply here at all:
-  #   depends_on "bats" => :test
+  #   depends_on "bats-core" => :test
   #   depends_on "jinja2-cli" => :build
   # and these packages won't be installed as dependency of this formula,
   # but independently on the host that performs CI/CD test and upload:
-  # depends_on "bats"
+  # depends_on "bats-core"
   # depends_on "jinja2-cli"
 
   # required to update default bash 3 to version 4 (or 5)
